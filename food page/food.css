@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Navbar */
+.firstPage{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width:100vw;
+    height:100vh;
+  
+}
+nav{
+    width:100vw;
+    height:10vh;
+    display: flex;
+    position: fixed;
+    top:0;
+    z-index: 10;
+    background-color: black;
+}
+
+nav img{
+    width:5vw;
+    height:auto;
+    position: absolute;
+    left:10%;
+   
+}
+
+.links{
+    display: flex;
+    position: absolute;
+    top:20%;
+    right:10%;
+   
+}
+
+.links a{
+    text-decoration: none;
+    color:white;
+}
+
+.subnavContent li{
+    list-style: none;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.links a, .subnav{
+     padding:0 20px 0 20px;
+}
+
+.home a:hover,.subnav a:hover,.questions a:hover,.contact a:hover{
+    padding-bottom: 10px;
+    color: rgb(182, 182, 182);
+    text-decoration: none;
+}
+.subnav:hover > .subnavContent{
+    display: block;
+}
+
+.subnavContent{
+    display: none;
+}
+
+
+
+/* Second Page */
+
+.secondPage{
+    width:100vw;
+    height:160vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(bg2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.card{
+    width:25vw;
+    height:60vh;
+    box-shadow: 10px 10px 50px black;
+}
+.image{
+    overflow: hidden;
+    width:25vw;
+    height: 40vh;
+}
+.card img{
+    width:100%;
+    height:40vh;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+}
+
+.card img:hover{
+    transform: scale(1.1);
+}
+
+
+.card-bottom{
+    width:25vw;
+    height: 20vh;
+}
+
+.foodDetails{
+    display: flex;
+    justify-content: space-around; 
+    width:25vw;
+    height: 15vh;
+    align-items: center;
+}
+
+.card-bottom button{
+    width:25vw;
+    height: 5vh;
+    background-color: black;
+    outline: none;
+    color: white;
+}
+
+.card-bottom button:hover{
+    background-color: rgb(91, 91, 91);
+}
+
+.top-card{
+    padding:70px 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    grid-gap:1rem;
+}
+
+.bottom-card{
+    padding:50px 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    grid-gap:1rem;
+}
+
+/* Third Page */
+.bottomBox{
+    width: 100vw;
+    min-height: 50px;
+    background-color: rgba(14, 14, 14, 0.5);
+}
+.bottomBox p{
+   color: white;
+   text-align: center;
+   justify-content: center;
+}
+
+
